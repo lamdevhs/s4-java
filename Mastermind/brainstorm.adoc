@@ -1,0 +1,10 @@
+- attempt amount
+- state (bools)
+- colors
+- sequence (row)
+- history
+- attempt = row + result + index
+- result
+
+== control
+- random hidden sequence
