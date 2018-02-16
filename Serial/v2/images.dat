@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_151" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="RatedImage" id="RatedImage0">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage0"/>
+      <string>gaudi.jpg</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage1">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage1"/>
+      <string>cellules.jpg</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage2">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage2"/>
+      <string>lucane.jpg</string>
+     </void>
+    </void>
+    <void class="RatedImage" method="getField">
+     <string>rating</string>
+     <void method="set">
+      <object idref="RatedImage2"/>
+      <int>5</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage3">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage3"/>
+      <string>personnes.jpg</string>
+     </void>
+    </void>
+    <void class="RatedImage" method="getField">
+     <string>rating</string>
+     <void method="set">
+      <object idref="RatedImage3"/>
+      <int>3</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage4">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage4"/>
+      <string>bretagne.jpg</string>
+     </void>
+    </void>
+    <void class="RatedImage" method="getField">
+     <string>rating</string>
+     <void method="set">
+      <object idref="RatedImage4"/>
+      <int>3</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage5">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage5"/>
+      <string>espace.jpg</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage6">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage6"/>
+      <string>sport.jpg</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage7">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage7"/>
+      <string>tigre.jpg</string>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="RatedImage" id="RatedImage8">
+    <void class="RatedImage" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="RatedImage8"/>
+      <string>paris.jpg</string>
+     </void>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
