@@ -1,7 +1,7 @@
 (UTILISATEUR A)
 
 #### git init
-Dépôt Git vide initialisé dans /home/nbayard/workspace/ProjectGit/.git/
+Dépôt Git vide initialisé dans /home/nathanael/workspace/ProjectGit/.git/
 
 
 #### git status
@@ -25,7 +25,7 @@ Modifications qui seront validées :
 
 #### git commit -m "premiere version du project"
 [master (commit racine) a4d1864] premiere vesion du projet
- Committer: Nathanael Bayard <nbayard@debian.univ-jfc.fr>
+ Committer: Nathanael Bayard <nathanael@debian.univ-jfc.fr>
 Votre nom et votre adresse e-mail ont été configurés automatiquement en se fondant
 sur votre nom d'utilisateur et le nom de votre machine. Veuillez vérifier qu'ils sont corrects.
 Vous pouvez supprimer ce message en les paramétrant explicitement :
