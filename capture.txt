@@ -1,0 +1,185 @@
+(UTILISATEUR A)
+
+#### git init
+Dépôt Git vide initialisé dans /home/nbayard/workspace/ProjectGit/.git/
+
+
+#### git status
+
+Sur la branche master
+
+Validation initiale
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+
+	nouveau fichier : .classpath
+	nouveau fichier : .gitignore
+	nouveau fichier : .project
+	nouveau fichier : src/Application.java
+	nouveau fichier : src/Controleur.java
+	nouveau fichier : src/Modele.java
+	nouveau fichier : src/Vue.java
+
+
+
+#### git commit -m "premiere version du project"
+[master (commit racine) a4d1864] premiere vesion du projet
+ Committer: Nathanael Bayard <nbayard@debian.univ-jfc.fr>
+Votre nom et votre adresse e-mail ont été configurés automatiquement en se fondant
+sur votre nom d'utilisateur et le nom de votre machine. Veuillez vérifier qu'ils sont corrects.
+Vous pouvez supprimer ce message en les paramétrant explicitement :
+
+    git config --global user.name "Votre Nom"
+    git config --global user.email vous@exemple.com
+
+Après ceci, vous pouvez corriger l'identité utilisée pour ce commit avec :
+
+    git commit --amend --reset-author
+
+ 7 files changed, 107 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .gitignore
+ create mode 100644 .project
+ create mode 100644 src/Application.java
+ create mode 100644 src/Controleur.java
+ create mode 100644 src/Modele.java
+ create mode 100644 src/Vue.java
+
+#### git status
+Sur la branche master
+rien à valider, la copie de travail est propre
+
+#### git push origin master
+Username for 'https://github.com': nathanael
+Password for 'https://nathanael@github.com': 
+Décompte des objets: 10, fait.
+Delta compression using up to 4 threads.
+Compression des objets: 100% (9/9), fait.
+Écriture des objets: 100% (10/10), 1.67 KiB | 0 bytes/s, fait.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/nathanael/tutorielGit.git
+ * [new branch]      master -> master
+
+#### (UTILISATEUR B)
+
+#### git fetch
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0
+Dépaquetage des objets: 100% (4/4), fait.
+Depuis https://github.com/nathanael/tutorielGit
+   a4d1864..1eecdeb  master     -> origin/master
+
+#### git pull origin master
+Depuis https://github.com/nathanael/tutorielGit
+ * branch            master     -> FETCH_HEAD
+Mise à jour a4d1864..1eecdeb
+Fast-forward
+ src/Application.java | 46 +++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 45 insertions(+), 1 deletion(-)
+
+#### git diff
+diff --git a/src/Application.java b/src/Application.java
+index 0a1f451..1731552 100644
+--- a/src/Application.java
++++ b/src/Application.java
+@@ -4,13 +4,7 @@ import java.awt.Frame;
+ import java.awt.event.WindowEvent;
+ import java.awt.event.WindowListener;
+ 
+-public class Application extends Frame implements WindowListener {
+ 
+-       public static void main(String[] args) {
+-               new Application();
+-       }
+-       
+-       public Application() {
+                super();
+                
+                Modele modl = new Modele();
+
+
+
+
+#### git commit -m "ajout du centrage de la fenêtre"
+[master d584d5f] ajout du centrage de la fenêtre
+ 1 file changed, 1 insertion(+)
+
+#### (UTILISATEUR B)
+
+#### git push origin master
+Username for 'https://github.com': nathanael
+Password for 'https://nathanael@github.com': 
+Décompte des objets: 4, fait.
+Delta compression using up to 4 threads.
+Compression des objets: 100% (4/4), fait.
+Écriture des objets: 100% (4/4), 407 bytes | 0 bytes/s, fait.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/nathanael/tutorielGit.git
+   1eecdeb..d584d5f  master -> master
+
+#### git commit -m "ajout d'un titre à la fenêtre"
+[master 41ff100] ajout d'un titre a la fenetre
+ 1 file changed, 1 insertion(+)
+
+#### git push origin master
+Username for 'https://github.com': nathanael
+Password for 'https://nathanael@github.com': 
+To https://github.com/nathanael/tutorielGit.git
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/nathanael/tutorielGit.git'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+
+#### git fetch
+remote: Counting objects: 11, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 11 (delta 8), reused 11 (delta 8), pack-reused 0
+Dépaquetage des objets: 100% (11/11), fait.
+Depuis https://github.com/nathanael/tutorielGit
+   d584d5f..63239f3  master     -> origin/master
+
+#### git pull origin master
+Depuis https://github.com/nathanael/tutorielGit
+ * branch            master     -> FETCH_HEAD
+Fusion automatique de src/Application.java
+CONFLIT (contenu) : Conflit de fusion dans src/Application.java
+La fusion automatique a échoué ; réglez les conflits et validez le résultat.
+
+
+#### git status
+Sur la branche master
+Vous avez des chemins non fusionnés.
+  (réglez les conflits puis lancez "git commit")
+
+Modifications qui seront validées :
+
+	modifié :         src/Vue.java
+
+Chemins non fusionnés :
+  (utilisez "git add <fichier>..." pour marquer comme résolu)
+
+	modifié des deux côtés :  src/Application.java
+
+
+#### git commit -m "conflit resolu sur le titre de la fenetre"
+[master 7ff22c3] conflit resolu sur le titre de la fenetre
+
+#### git push origin master
+Username for 'https://github.com': nathanael
+Password for 'https://nathanael@github.com': 
+Décompte des objets: 8, fait.
+Delta compression using up to 4 threads.
+Compression des objets: 100% (8/8), fait.
+Écriture des objets: 100% (8/8), 785 bytes | 0 bytes/s, fait.
+Total 8 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/nathanael/tutorielGit.git
+   63239f3..7ff22c3  master -> master
+
+
